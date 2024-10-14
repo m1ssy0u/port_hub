@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Link Buttons</title>
+    <style>
+        @font-face {
+            font-family: KMITL-GO;
+            src: url("./KMITLGORegular.ttf");
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color :#0b0a0acc;
+            font-family: 'Arial', sans-serif;
+            font-family: 'KMITL-GO'
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .button {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        @media (min-width: 768px) {
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .button {
+                font-size: 1.5rem;
+                padding: 20px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>คลิ๊กลิงก์เพื่อเข้าชมผลงานต่างๆ</h1>
+        <div class="button-container">
+            <a href="https://www.youtube.com/@missyousoth/videos" class="button">YouTube</a>
+            <a href="https://qr.varakorn.net/" class="button">QR CODE</a>
+        </div>
+    </div>
+
+</body>
+</html>
